@@ -1,6 +1,6 @@
 'use client';
 
-import { getFortuneByIlju } from '@/domain/fortune/fortune';
+import { getFortuneByIlju, getFortunMsgByIlju } from '@/domain/fortune/fortune';
 import { calculateIlju } from '@/domain/ilju/ilju.calculate';
 
 export default function Home() {
@@ -25,6 +25,9 @@ export default function Home() {
 
     const fortune = getFortuneByIlju(ilju);
     console.log(fortune);
+
+    const fortuneMessage = getFortunMsgByIlju(ilju);
+    console.log(fortuneMessage);
   };
   return (
     <div className='flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black'>
