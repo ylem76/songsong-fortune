@@ -1,7 +1,7 @@
 const CACHE_NAME = 'songsong-v1';
 
 const PRECACHE_IMAGES = [
-  '/images/main.png',
+  '/images/intro.png',
   '/images/money.png',
   '/images/work.png',
   '/images/love.png',
