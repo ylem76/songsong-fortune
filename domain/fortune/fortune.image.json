@@ -1,7 +1,7 @@
 {
-  "재물운": "/money.png",
-  "애정운": "/love.png",
-  "직업운": "/work.png",
-  "친구운": "/friends.png",
-  "휴식운": "/relax.png"
+  "재물운": "/images/money.png",
+  "애정운": "/images/love.png",
+  "직업운": "/images/work.png",
+  "친구운": "/images/friends.png",
+  "휴식운": "/images/relax.png"
 }
