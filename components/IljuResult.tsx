@@ -43,7 +43,7 @@ export default function IljuResult({
 
         {/* 타이틀 */}
         <header
-          className={clsx('text-center mb-16 text-36px', yclover.className)}>
+          className={clsx('text-center mb-8 text-36px', yclover.className)}>
           <p className='text-[36px] text-[#1F3C88] mb-4'>{ilju} 일주의 당신</p>
           <h1 className='text-[36px] text-[#1F3C88] -mt-4'>
             2026 <span className='font-bold'>대박운세</span>는?
@@ -51,7 +51,7 @@ export default function IljuResult({
         </header>
 
         {/* 중앙 비주얼 영역 */}
-        <div className='relative flex justify-center items-center mb-20 w-[540px]'>
+        <div className='relative flex justify-center items-center mb-12 w-[540px]'>
           {/* 부스 안내 원형 배지 */}
           <div className='absolute right-0 top-1/2 -translate-y-1/2 rotate-12'>
             <div className='w-[220px] h-[220px] rounded-full bg-[#E57368] flex flex-col items-center justify-center text-white text-center'>
@@ -70,7 +70,7 @@ export default function IljuResult({
             <img
               src={fortuneImg}
               alt={fortune}
-              className='w-[360px] h-auto rotate-[-6deg]'
+              className='w-[290px] h-auto rotate-[-6deg]'
             />
           </div>
         </div>
