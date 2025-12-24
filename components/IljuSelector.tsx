@@ -54,13 +54,13 @@ export default function IljuSelector({
           <h1
             className={clsx(
               yclover.className,
-              'text-[72px] text-[#1F3C88] text-center leading-tight mb-8 mt-4'
+              'text-[72px] text-[#1F3C88] text-center leading-tight mb-4 mt-4'
             )}>
             2026 나의 <span className='font-bold'>대박운세</span>
           </h1>
 
           {/* 일러스트 + 말풍선 */}
-          <div className='relative flex justify-center items-center m-8 w-[570px]'>
+          <div className='relative flex justify-center items-center m-8 mt-0 w-[570px] mb-0'>
             {/* 말풍선 */}
             <div
               className='

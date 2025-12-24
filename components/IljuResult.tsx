@@ -51,7 +51,7 @@ export default function IljuResult({
         </header>
 
         {/* 중앙 비주얼 영역 */}
-        <div className='relative flex justify-center items-center mb-12 w-[540px]'>
+        <div className='relative flex justify-center items-center mb-12 w-[480px]'>
           {/* 부스 안내 원형 배지 */}
           <div className='absolute right-0 top-1/2 -translate-y-1/2 rotate-12'>
             <div className='w-[220px] h-[220px] rounded-full bg-[#E57368] flex flex-col items-center justify-center text-white text-center'>
