@@ -1,5 +1,6 @@
 import fortuneMapJson from './fortune.map.2026.json';
 import fortuneMessageJson from './fortune.message.json';
+import fortuneImageJson from './fortune.image.json';
 import type { Ilju } from '../ilju/ilju.types';
 import type { FortuneKind } from './fortune.types';
 
@@ -12,4 +13,8 @@ export function getFortuneByIlju(ilju: Ilju): FortuneKind {
 
 export function getFortunMsgByIlju(ilju: Ilju): string {
   return fortuneMessageJson[ilju];
+}
+
+export function getFortuneImage(fortune: FortuneKind): string {
+  return fortuneImageJson[fortune];
 }

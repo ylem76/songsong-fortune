@@ -1,1 +1,1 @@
-export type FortuneKind = '직업운' | '금전운' | '친구운' | '이성운' | '휴식운';
+export type FortuneKind = '직업운' | '재물운' | '친구운' | '애정운' | '휴식운';
