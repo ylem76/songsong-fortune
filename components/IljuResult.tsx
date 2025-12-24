@@ -1,26 +1,20 @@
+'use client';
+
 import {
   getFortuneByIlju,
-  getFortunMsgByIlju,
   getFortuneImage,
+  getFortunMsgByIlju,
 } from '@/domain/fortune/fortune';
 import { Ilju } from '@/domain/ilju/ilju.types';
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
 
-type Props = {
-  params: {
-    ilju: string;
-  };
-};
-
-export default async function ResultPage({ params }: Props) {
-  const { ilju: encodedIlju } = await params;
-  const ilju = decodeURIComponent(encodedIlju) as Ilju;
-
-  if (!ilju) {
-    notFound();
-  }
-
+export default function IljuResult({
+  ilju,
+  setIlju,
+}: {
+  ilju: Ilju | '';
+  setIlju: (ilju: Ilju | '') => void;
+}) {
+  if (ilju === '') return;
   const fortune = getFortuneByIlju(ilju);
   const fortuneImg = getFortuneImage(fortune);
   const fortuneMessage = getFortunMsgByIlju(ilju);
@@ -84,12 +78,14 @@ export default async function ResultPage({ params }: Props) {
             <span>📣</span>
             친구에게 공유하기
           </button>
-          <Link
-            href='/'
+          <button
+            onClick={() => {
+              setIlju('');
+            }}
             className='flex items-center gap-2 hover:text-black transition'>
             <span>↺</span>
             다시 해보기
-          </Link>
+          </button>
         </footer>
       </section>
     </main>
